@@ -1,70 +1,189 @@
-# Getting Started with Create React App
+# ⛽ Fuel Management System - Mont-Gabaon Airlines
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive fuel inventory management system designed specifically for airline operations, featuring role-based interfaces and real-time stock tracking.
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-18.0-blue.svg)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+### 👨‍💼 Administration
+- **Director Management**: Create and manage department heads
+- **System Overview**: Global view of all operations and metrics
+- **User Access Control**: Centralized user permission management
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📊 Dispatch Operations
+- **Stock Management**: Fuel inventory tracking and replenishment
+- **Flight Planning**: Create flight plans with pilot assignments
+- **Daily Reporting**: Comprehensive daily flight operations reports
+- **Team Management**: Create and manage dispatch team members
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✈️ Flight Operations
+- **Pilot Management**: Create pilot accounts with credentials
+- **Captain Reports**: Monitor and review pilot fuel consumption reports
+- **Fleet Oversight**: Track active pilots and flight assignments
+- **Operations Team**: Manage operations department personnel
 
-### `npm test`
+### 💰 Finance Department
+- **Cost Analysis**: Detailed fuel cost analysis per flight
+- **Efficiency Metrics**: Fuel usage efficiency tracking and reporting
+- **Financial Reporting**: Comprehensive financial insights and recommendations
+- **Budget Tracking**: Monitor fuel expenses and waste reduction
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 👨‍✈️ Pilot Interface
+- **Flight Assignments**: View assigned flights and fuel allocations
+- **Captain Reports**: Submit detailed fuel consumption reports
+- **Stock Visibility**: Real-time fuel stock monitoring
+- **Simple Dashboard**: Streamlined interface for operational efficiency
 
-### `npm run build`
+## 🛠️ Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React 18 with Hooks
+- **Styling**: Tailwind CSS 3.4
+- **Icons**: Lucide React
+- **Build Tool**: Create React App
+- **Version Control**: Git & GitHub
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📦 Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+- Node.js (version 16.0 or higher)
+- npm or yarn package manager
+- Git
 
-### `npm run eject`
+### Setup Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository**
+```bash
+git clone https://github.com/Mertha25/mont-gabaon-fuel-system.git
+cd mont-gabaon-fuel-system
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install dependencies**
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Configure Tailwind CSS**
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Start the development server**
+```bash
+npm start
+```
 
-## Learn More
+The application will open at [http://localhost:3000](http://localhost:3000)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔐 Demo Accounts
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Role | Username | Password | Department |
+|------|----------|----------|------------|
+| **System Admin** | `admin` | `admin123` | Administration |
+| **Dispatch Director** | `dir_dispatch` | `dispatch123` | Dispatch |
+| **Operations Director** | `dir_ops` | `ops123` | Flight Operations |
+| **Finance Director** | `dir_finance` | `finance123` | Finance |
+| **Pilot** | `pilot1` | `pilot123` | Flight Operations |
 
-### Code Splitting
+## 🏗️ System Architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Role-Based Access Control
+- **Departmental Isolation**: Each department can only access their specific data
+- **Hierarchical Permissions**: Directors can manage their team members
+- **Secure Authentication**: Password-protected access with role validation
 
-### Analyzing the Bundle Size
+### Data Flow
+1. **Dispatch** creates flight plans with fuel requirements
+2. **Pilots** complete captain reports after flights
+3. **Stock** updates automatically based on actual consumption
+4. **Finance** generates cost reports from consumption data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📱 User Interface
 
-### Making a Progressive Web App
+### Dashboard Features
+- **Real-time Metrics**: Live fuel stock, flight counts, and consumption data
+- **Department-Specific Views**: Customized dashboards per user role
+- **Activity Tracking**: Recent system activities and notifications
+- **Visual Analytics**: Charts and graphs for data visualization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Responsive Design
+- **Mobile-First**: Optimized for tablets and mobile devices
+- **Modern UI**: Clean, professional interface with intuitive navigation
+- **Accessibility**: WCAG compliant design with proper contrast ratios
 
-### Advanced Configuration
+## 🔄 Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Development
+```bash
+npm start          # Start development server
+npm test           # Run test suite
+npm run build      # Build for production
+npm run eject      # Eject from Create React App
+```
 
-### Deployment
+### Production
+```bash
+npm run build      # Create optimized production build
+npm run preview    # Preview production build locally
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🚀 Deployment
 
-### `npm run build` fails to minify
+### Production Build
+```bash
+npm run build
+```
+The build folder will contain the production-ready files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Deployment Options
+- **Netlify**: Drag and drop the `build` folder
+- **Vercel**: Connect GitHub repository for automatic deployments
+- **AWS S3**: Upload build files to S3 bucket with CloudFront
+- **Traditional Hosting**: Upload build folder to web server
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📋 Future Enhancements
+
+- [ ] **API Integration**: Connect to backend services
+- [ ] **Real-time Notifications**: Push notifications for critical alerts
+- [ ] **Advanced Analytics**: Machine learning for fuel consumption predictions
+- [ ] **Mobile App**: Native mobile application for pilots
+- [ ] **Integration**: Connect with existing airline management systems
+- [ ] **Multi-language Support**: French and English language options
+
+## 🐛 Known Issues
+
+- Tailwind CSS configuration may require manual setup
+- Demo data is stored in local state (will be replaced by API)
+
+## 📞 Support
+
+For technical support or questions:
+- **GitHub Issues**: [Create an issue](https://github.com/Mertha25/mont-gabaon-fuel-system/issues)
+- **Documentation**: Check the project wiki for detailed guides
+
+
+## 🙏 Acknowledgments
+
+- **Mont-Gabaon Airlines** for the project requirements and specifications
+- **React Team** for the excellent development framework
+- **Tailwind CSS** for the utility-first CSS framework
+- **Lucide** for the beautiful icon library
+
+---
+
+**Built with ❤️ for Mont-Gabaon Airlines**
+
+*Professional fuel management for modern aviation operations*
