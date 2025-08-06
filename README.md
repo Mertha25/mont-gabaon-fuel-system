@@ -174,6 +174,9 @@ For technical support or questions:
 - **GitHub Issues**: [Create an issue](https://github.com/Mertha25/mont-gabaon-fuel-system/issues)
 - **Documentation**: Check the project wiki for detailed guides
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
